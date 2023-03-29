@@ -1,0 +1,108 @@
+@import url(root.css);
+
+body {
+  max-width: none;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+h1:first-child {
+  display: inline;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 24px;
+  background-color: gray;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.text {
+  display: inline;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  background-color: brown;
+}
+
+.fancy-text {
+  font-size: 64px;
+  line-height: 72px;
+  color: darkblue;
+}
+
+.fancy-text span:nth-child(2) {
+  color: crimson;
+  display: inline;
+}
+
+input {
+  width: 700px;
+  margin-bottom: 24px;
+}
+/* 
+button {
+  margin-right: 24px;
+  padding: 16px;
+} */
+
+span {
+  margin: 36px;
+}
+
+hr {
+  margin-bottom: 36px;
+}
+
+.container {
+  display: flex;
+  margin: 36px 0;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: dimgray;
+}
+
+.container p {
+  padding: 16px;
+  background-color: coral;
+  width: 30%;
+}
+
+.container p:nth-child(2) {
+  background-color: blueviolet;
+}
+
+/* @media (max-width: 600px) {
+  main {
+    background-color: red;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  main {
+    background-color: green;
+  }
+} */
+
+@media (orientation: portrait) {
+  main {
+    background-color: purple;
+  }
+}
+
+@media (orientation: landscape) {
+  main {
+    background-color: brown;
+  }
+}
