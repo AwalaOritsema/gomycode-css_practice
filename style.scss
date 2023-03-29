@@ -1,0 +1,122 @@
+:root {
+  font-family: "Lato";
+  color: #171616;
+
+  --primary-color: #6b5847;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #d5d6d8, #dddee0);
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .nav-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 16px 24px;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #524437;
+    transform: scale(1.1);
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  &-article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+// div.band {
+//   height: 120px;
+//   background-color: red;
+// }
+
+// #band {
+//   height: 120px;
+//   background-color: purple;
+// }
+
+// div#band {
+//   height: 120px;
+//   background-color: aqua;
+// }
+
+// div.band.another#band {
+//   height: 120px;
+//   background-color: gray;
+// }
+
+.band {
+  height: 60px;
+  background-color: var(--primary-color);
+}
+
+// later in code
+
+div {
+  height: 120px !important;
+  background-color: pink !important;
+}
