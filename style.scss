@@ -109,14 +109,152 @@ body {
 //   background-color: gray;
 // }
 
-.band {
-  height: 60px;
-  background-color: var(--primary-color);
+// .band {
+//   height: 60px;
+//   background-color: var(--primary-color);
+// }
+
+// // later in code
+
+// div {
+//   height: 120px !important;
+//   background-color: pink !important;
+// }
+
+.lists {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 120px 0;
+
+  // .lists-ul
+  &-ul {
+    width: 35%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background-color: gray;
+
+    li {
+      padding: 12px 16px;
+      border: solid 1px lightgray;
+      background-color: whitesmoke;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    // li:not(li:nth-child(5)) {
+    //   background-color: #171616;
+    // }
+
+    li:nth-child(5) {
+      background-color: pink;
+
+      &::before {
+        content: "The ";
+      }
+
+      &::after {
+        content: "th element";
+      }
+    }
+
+    // li:nth-of-type(even) {
+    //   color: white;
+    //   background-color: black;
+    // }
+
+    // li:nth-of-type(odd) {
+    //   background-color: gray;
+    // }
+
+    // li:first-child {
+    //   background-color: purple;
+    // }
+
+    // li:nth-child(2) {
+    //   background-color: aqua;
+    // }
+
+    // li:nth-child(3) {
+    //   background-color: black;
+    // }
+
+    // li:nth-child(4) {
+    //   background-color: crimson;
+    // }
+
+    // li:last-child {
+    //   background-color: green;
+    // }
+  }
+
+  &-article {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
 
-// later in code
+.free-space {
+  padding: 300px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // place-items: center;
 
-div {
-  height: 120px !important;
-  background-color: pink !important;
+  &-button {
+    padding: 24px 32px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    // transition-property: all;
+    // transition-duration: 5s;
+    // transition-delay: 2s;
+    transition: all 0.2s;
+    animation-name: zoom-button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    &:hover {
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@keyframes zoom-button {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
