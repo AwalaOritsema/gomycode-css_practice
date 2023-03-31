@@ -228,10 +228,11 @@ body {
     // transition-duration: 5s;
     // transition-delay: 2s;
     transition: all 0.2s;
-    animation-name: zoom-button;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    // animation-name: zoom-button;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    // animation-iteration-count: infinite;
+    animation: zoom-button 1s infinite forwards;
 
     &:hover {
       background-color: transparent;
@@ -244,6 +245,17 @@ body {
     }
   }
 }
+
+// .blur-container {
+//   width: 650px;
+//   height: 500px;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   position: fixed;
+//   top: 120px;
+//   left: 100px;
+//   backdrop-filter: blur(10px);
+//   box-shadow: 10px 10px 10px gray;
+// }
 
 @keyframes zoom-button {
   0% {

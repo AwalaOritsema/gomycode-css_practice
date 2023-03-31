@@ -141,10 +141,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
-  animation-name: zoom-button;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation: zoom-button 1s infinite forwards;
 }
 .free-space-button:hover {
   background-color: transparent;
